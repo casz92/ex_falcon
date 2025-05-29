@@ -30,7 +30,7 @@ defmodule Falcon.MixProject do
         "A post-quantum cryptography library for digital signatures based on the Falcon algorithm",
       files: ["lib", "c_src", "mix.exs", "README*", "libfalcon", "Makefile"],
       maintainers: ["Carlos Suarez"],
-      links: %{"GitHub" => "https://github.com/casg92/ex_falcon"},
+      links: %{"GitHub" => "https://github.com/casz92/ex_falcon"},
       licenses: ["MIT"]
     ]
   end
