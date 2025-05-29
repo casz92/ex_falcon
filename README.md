@@ -93,5 +93,7 @@ pubkey == pubkey2
 
 ## Testing
 Run the following commands to test Falcon-512 and Falcon-1024:
-mix run test/falcon_test.exs
+```bash
+mix run test/falcon_512_test.exs
 mix run test/falcon_1024_test.exs
+```
