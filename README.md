@@ -26,6 +26,10 @@ Falcon signatures include an initial **41-byte padding**, which is automatically
 
 This optimization offers a practical way to minimize storage and transmission overhead while preserving Falcon’s cryptographic strength.
 
+### Compilation & Testing
+- **Compiled and tested on Linux x64.**
+
+### Details
 | Security | LOGN |
 |----------|------|
 | Falcon-512 | 9 |
