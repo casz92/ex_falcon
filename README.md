@@ -75,9 +75,20 @@ end
 ### Example
 ```elixir
 msg = "Hello world!"
-{:ok, pub, priv} = Falcon.gen_key_pair()
-{:ok, signature} = Falcon.sign(priv, msg)
-r = Falcon.verify(msg, signature, pub)
+{:ok, pubkey, privkey} = Falcon.gen_key_pair()
+{:ok, signature} = Falcon.sign(privkey, msg)
+:ok = Falcon.verify(msg, signature, pubkey)
+
+# Generate from seed
+{:ok, pubkey, privkey} = Falcon.gen_keys_from_seed("your_seed")
+# Generate public key from private key
+{:ok, pubkey2} = Falcon.gen_pub_key(privkey)
+pubkey == pubkey2
+
+# Falcon1024 test
+{:ok, pub, priv} = Falcon1024.gen_key_pair()
+{:ok, signature} = Falcon1024.sign(priv, msg)
+:ok = Falcon1024.verify(msg, signature, pub)
 ```
 
 ## Testing
