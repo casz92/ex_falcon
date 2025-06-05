@@ -1,7 +1,7 @@
 defmodule Falcon.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
 
   def project do
     [
@@ -28,7 +28,7 @@ defmodule Falcon.MixProject do
       name: "ex_falcon",
       description:
         "A post-quantum cryptography library for digital signatures based on the Falcon algorithm",
-      files: ["lib", "c_src", "mix.exs", "README*", "libfalcon", "Makefile"],
+      files: ["lib", "c_src", "mix.exs", "README*", "libfalcon", "Makefile", "Makefile1024", "LICENSE*"],
       maintainers: ["Carlos Suarez"],
       links: %{"GitHub" => "https://github.com/casz92/ex_falcon"},
       licenses: ["MIT"]
